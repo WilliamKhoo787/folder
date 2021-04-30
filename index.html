@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<style type="text/css">
+		body
+		{	display: grid;
+			background-color: #6A6A6A;
+			margin: 0px;
+			grid-template-rows:  15vh 20vh 29vh 1vh 35vh;
+			grid-template-columns: 6.25vw 17.1875vw 6.25vw 17.1875vw 6.25vw 17.1875vw 6.25vw 17.1875vw 6.25vw;
+			grid-template-areas: 
+				"top top top top top top top top top"
+				"up up up up up up up up up"
+				"lside left ... center ... right ... middle rside"
+				"bottom bottom bottom bottom bottom bottom bottom bottom bottom"
+				"bottom bottom bottom bottom bottom bottom bottom bottom bottom";
+		}
+		.press
+		{
+			background-color:  silver;
+			border: inset #7A7A7A 1em;
+			width: 17.1875vw;
+			height: 29vh;
+			font-size: 2em;
+			font-weight: bold; 
+			transition: all 3s ease-in;	
+		}
+		#one
+		{
+			grid-area: left;
+		}
+		#two
+		{
+			grid-area: center;
+		}
+		#three
+		{
+			grid-area: right;
+		}
+		#four
+		{
+			grid-area: middle;
+		}
+		#top
+		{
+			vertical-align: center;
+			text-align: center; 
+			margin: 0;
+			grid-area: top;
+			background-color: #6A6A7A;
+		}
+		#up
+		{
+			grid-area: up;
+		}
+		#lside
+		{
+			grid-area: lside;
+		}
+		#rside
+		{
+			grid-area: rside;
+		}
+		#bottom
+		{
+			grid-area: bottom;
+
+		}
+		.press:hover
+		{
+			width: 18vw;
+			height: 21vh;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="lside">.</div>
+	<div id="rside">.</div>
+	<h1 id="top">E-Greeting Card Maker</h1>
+	<h1 id="up"></h1>
+		<a href="Coperate.html" id="one"><button class="press" >Coperate</button></a>
+		<a href="Formal.html" id="two"><button class="press" >Formal</button></a>
+		<a href="Informal.html" id="three"><button class="press" >Informal</button></a>
+		<a href="Custom.html" id="four"><button class="press" >Custom Card</button></a>
+	<div id="bottom"></div>
+</body>
+</html>
